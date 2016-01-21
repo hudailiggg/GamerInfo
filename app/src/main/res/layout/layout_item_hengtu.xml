@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_item_hengtu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="《我的世界》 EP4评测8.2分 最诡异的一章"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_hengtu_title"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_hengtu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_item_hengtu"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/news_item_test_hengtu"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_item_hengtu_author"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/news_item_test_hengtu_header"/>
+
+            <TextView
+                android:id="@+id/tv_item_hengtu_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_item_hengtu_author"
+                android:text="暗哨"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_item_hengtu_fixtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:layout_below="@id/iv_item_hengtu"
+                android:text="评论"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_item_hengtu_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_item_hengtu_fixtext"
+                android:layout_below="@id/iv_item_hengtu"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@id/tv_item_hengtu_fixtext"
+                android:text="0"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

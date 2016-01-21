@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5">
+
+        <ImageView
+            android:id="@+id/iv_item_news"
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_item_test"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/tv_item_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="《生化危机0：HD》三平台画质对比 PC版完胜"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_news_fixtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_item_news_title"
+            android:layout_marginTop="10dp"
+            android:text="评论"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_news_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_item_news_fixtext"
+            android:layout_below="@id/tv_item_news_title"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/tv_item_news_fixtext"
+            android:text="0"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

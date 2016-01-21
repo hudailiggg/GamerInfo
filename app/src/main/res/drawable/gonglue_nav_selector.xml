@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_bottom_text_selected" android:drawable="@drawable/icon_gonglue_h"
+          android:state_selected="true">
+
+    </item>
+    <item android:color="@color/color_bottom_text_default" android:drawable="@drawable/icon_gonglue"
+          android:state_selected="false">
+
+    </item>
+</selector>

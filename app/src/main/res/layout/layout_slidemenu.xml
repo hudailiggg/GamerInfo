@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--此ScrollView保留作为程序扩展-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jsbg"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/user_default_photo"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/photo"
+                    android:layout_alignRight="@id/photo"
+                    android:layout_below="@id/photo"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="立即登录"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#eeeeee"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_reserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_shoucang"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/shoucang"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_shoucang"
+                        android:layout_alignTop="@id/iv_shoucang"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_shoucang"
+                        android:gravity="center"
+                        android:text="我的收藏"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/search"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_search"
+                        android:layout_alignTop="@id/iv_search"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_search"
+                        android:gravity="center"
+                        android:text="内容搜索"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_yaowen"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/yaowen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_yaowen"
+                        android:layout_alignTop="@id/iv_yaowen"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_yaowen"
+                        android:gravity="center"
+                        android:text="要闻资讯"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_youxiguanli"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/youxiguanli"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_youxiguanli"
+                        android:layout_alignTop="@id/iv_youxiguanli"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_youxiguanli"
+                        android:gravity="center"
+                        android:text="游戏管理"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_night"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/yejianmoshi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_night"
+                        android:layout_alignTop="@id/iv_night"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_night"
+                        android:gravity="center"
+                        android:text="夜间模式"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_drawer_pattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_clickselector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_2g3g"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/net2g3g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_2g3g"
+                        android:layout_alignTop="@id/iv_2g3g"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/iv_2g3g"
+                        android:gravity="center"
+                        android:text="2G/3G无图"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/drawer_item_textsize"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divlinecolor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_drawer_cleancache"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawer_clickselector"
+                            android:clickable="true">
+
+                            <ImageView
+                                android:id="@+id/iv_clean"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="25dp"
+                                android:src="@drawable/clean"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_clean"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="清空缓存"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/drawer_item_textsize"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_drawer_feedback"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawer_clickselector"
+                            android:clickable="true">
+
+                            <ImageView
+                                android:id="@+id/iv_feedback"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="25dp"
+                                android:src="@drawable/feedback"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_feedback"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="意见反馈"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/drawer_item_textsize"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_drawer_settings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawer_clickselector"
+                            android:clickable="true">
+
+                            <ImageView
+                                android:id="@+id/iv_settings"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="25dp"
+                                android:src="@drawable/settings"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_settings"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="更多设置"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/drawer_item_textsize"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

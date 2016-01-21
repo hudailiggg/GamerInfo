@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bottom_nav_background_selector">
+
+    <RelativeLayout
+        android:id="@+id/rl_news_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_xinwen"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/news_nav_selector"/>
+
+        <TextView
+            android:id="@+id/tv_xinwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_xinwen"
+            android:layout_alignRight="@id/iv_xinwen"
+            android:layout_below="@id/iv_xinwen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="新闻"
+            android:textSize="11sp"
+            android:textColor="@drawable/news_nav_selector"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gonglue_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_gonglue"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gonglue_nav_selector"/>
+
+        <TextView
+            android:id="@+id/tv_gonglue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_gonglue"
+            android:layout_alignRight="@id/iv_gonglue"
+            android:layout_below="@id/iv_gonglue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="攻略"
+            android:textSize="11sp"
+            android:textColor="@drawable/gonglue_nav_selector"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shouyou_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_shouyou"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shouyou_nav_selector"/>
+
+        <TextView
+            android:id="@+id/tv_shouyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_shouyou"
+            android:layout_alignRight="@id/iv_shouyou"
+            android:layout_below="@id/iv_shouyou"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="手游"
+            android:textSize="11sp"
+            android:textColor="@drawable/shouyou_nav_selector"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dingyue_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_dingyue"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dingyue_nav_selector"/>
+
+        <TextView
+            android:id="@+id/tv_dingyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_dingyue"
+            android:layout_alignRight="@id/iv_dingyue"
+            android:layout_below="@id/iv_dingyue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="订阅"
+            android:textSize="11sp"
+            android:textColor="@drawable/dingyue_nav_selector"/>
+    </RelativeLayout>
+</LinearLayout>

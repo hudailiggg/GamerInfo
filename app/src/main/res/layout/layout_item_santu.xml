@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_item_santu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="别有深意晚间囧途 一妻多夫制合理性分析"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_santu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_santu_title">
+
+        <ImageView
+            android:id="@+id/iv_item_santu_left"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_item_test"/>
+
+        <ImageView
+            android:id="@+id/iv_item_santu_center"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_item_test"/>
+
+        <ImageView
+            android:id="@+id/iv_item_santu_right"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/news_item_test"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_santu_fixtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_item_santu"
+        android:layout_marginTop="10dp"
+        android:text="评论"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_item_santu_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_item_santu_fixtext"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/tv_item_santu_fixtext"
+        android:text="0"
+        android:textSize="15sp"/>
+</RelativeLayout>

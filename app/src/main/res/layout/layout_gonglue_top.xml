@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_top_nav_background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_open_slidingmenu_gonglue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_toolbar_setting_btn_default"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:textColor="@color/color_top_nav_text_default"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="攻略"/>
+
+    <ImageView
+        android:id="@+id/iv_sort_navitem_gonglue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_toolbar_add_btn_default"/>
+
+
+</LinearLayout>

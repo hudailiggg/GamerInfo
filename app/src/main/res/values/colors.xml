@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="loginbg">#03221e</color>
+    <color name="textColor">#4a444d</color>
+    <color name="drawerclicker">#dbdbdb</color>
+    <color name="divlinecolor">#bbbfbf</color>
+
+    <color name="color_loginbt_bg_unpressed">#b20404</color>
+    <color name="color_loginbt_bg_pressed">#872c2c</color>
+    <color name="color_loginbt_text_enable">@color/colorWhite</color>
+    <color name="color_loginbt_text_pressed">@color/colorWhite</color>
+    <color name="color_loginbt_text_disable">#5a5555</color>
+
+    <color name="color_verification_bt_unpressed">#5c0505</color>
+    <color name="color_verification_bt_pressed">#872c2c</color>
+    <color name="color_verification_text_disable">#5a5555</color>
+    <color name="color_verification_text_enable">@color/colorWhite</color>
+    <color name="color_verification_text_pressed">@color/colorWhite</color>
+
+    <color name="color_bottom_text_default">#70777b</color>
+    <color name="color_bottom_text_selected">#ee5449</color>
+    <color name="color_bottom_nav_background">#e5e6e7</color>
+
+    <color name="color_top_nav_background">#d64a4a</color>
+    <color name="color_top_nav_text_default">#e7e2e2</color>
+    <color name="color_top_nav_text_high">#00983a</color>
+    <color name="color_top_nav_sliding_block">#6fffffff</color>
+    <color name="color_top_nav_sliding_text">#00000000</color>
+
+    <color name="color_item_page_background_red">#872c2c</color>
+    <color name="color_item_page_background_green">#00983a</color>
+    <color name="color_item_page_background_blue">#303F9F</color>
+    <color name="color_item_page_background_yellow">#e0ec1f</color>
+
+</resources>
