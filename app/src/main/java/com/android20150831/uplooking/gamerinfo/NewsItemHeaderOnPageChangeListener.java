@@ -11,16 +11,14 @@ import com.comm.AllChannelListResponseInfo;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/1/12.
+ * 新闻列表幻灯片ViewPager滑动监听器
  */
 public class NewsItemHeaderOnPageChangeListener implements ViewPager.OnPageChangeListener {
-    private View parentView;
     private AllChannelListResponseInfo data;
     private TextView tvTitle;
     private ArrayList<ImageView> roundArrayList;
 
     NewsItemHeaderOnPageChangeListener(View parentView, AllChannelListResponseInfo data) {
-        this.parentView = parentView;
         this.data = data;
         tvTitle = (TextView) parentView.findViewById(R.id.tv_huandeng_title);
         roundArrayList = new ArrayList<>();

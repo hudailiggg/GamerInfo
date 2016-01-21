@@ -24,13 +24,7 @@ import com.comm.CommUtils;
 public class NewsContentFragment extends Fragment {
     private View view;
     private ViewPager viewPager;
-    private MainActivity mainActivityInstance;
     private Context context;
-    private NewsFragmentPagerAdapter pagerAdapter;
-
-    public NewsFragmentPagerAdapter getPagerAdapter() {
-        return pagerAdapter;
-    }
 
     public ViewPager getViewPager() {
         return viewPager;
@@ -42,7 +36,7 @@ public class NewsContentFragment extends Fragment {
         view = inflater.inflate(R.layout.layout_news_content, null);
         viewPager = (ViewPager) view.findViewById(R.id.vp_news_content);
         context = getActivity();
-        mainActivityInstance = (MainActivity) context;
+        final MainActivity mainActivityInstance = (MainActivity) context;
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -107,7 +101,6 @@ public class NewsContentFragment extends Fragment {
     public void onResume() {
         Log.i("test", "NewsContentFragment onResume");
         super.onResume();
-
     }
 
     @Override

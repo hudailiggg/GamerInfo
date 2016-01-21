@@ -24,7 +24,6 @@ public class MainActivity extends SlidingFragmentActivity {
     private int previousIndex = -1;
     private boolean channelDownloadComplete = false;
     private NewsPagerAdapterHandler newsPagerAdapterHandler;
-    private NewsTopFragment newsTopFragment;
 
     public NewsPagerAdapterHandler getNewsPagerAdapterHandler() {
         return newsPagerAdapterHandler;
@@ -90,9 +89,11 @@ public class MainActivity extends SlidingFragmentActivity {
     }
 
     /**
-     * Activity处于后台的时候根据当前设备内存使用状态会被不定时回收，
-     * 但是依附在它上面的Fragment不会被回收，所以会导致Fragment重新
-     * 加载的时候访问到
+     * FragmentActivity处于后台的时候根据当前设备内存使用状况被不定时回收，
+     * 但是依附在它上面的Fragment不会被回收，所以会导致Fragment在引用到
+     * 其所依附的Activity实例的时候出现空指针异常，通过查看源码发现FragmentActivity
+     * 在被回收的时候会保存其所依附的Fragment的状态，当前项目选择注释掉该功能，
+     * 这样当Activity处于后台被回收后，下一次启动该Activity会重新初始化它依附的所有Fragment
      *
      * @param outState
      */
@@ -127,7 +128,7 @@ public class MainActivity extends SlidingFragmentActivity {
         BottomNavFragment bottomNavFragment = new BottomNavFragment();
 
         /****************新闻顶部导航和内容区******************/
-        newsTopFragment = new NewsTopFragment();
+        NewsTopFragment newsTopFragment = new NewsTopFragment();
         NewsContentFragment newsContentFragment = new NewsContentFragment();
         HashMap<String, Fragment> newsFragmentsMap = new HashMap<>();
         newsFragmentsMap.put("top", newsTopFragment);

@@ -60,7 +60,7 @@ public class NewsContentPageFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        this.pageName = getArguments().getString("pagename");
+        //this.pageName = getArguments().getString("pagename");
         //Log.i("test", pageName + " : " + "onAttach");
     }
 
